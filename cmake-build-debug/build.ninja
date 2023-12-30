@@ -79,6 +79,12 @@ build CMakeFiles/task.dir/website.cpp.obj: CXX_COMPILER__task_Debug C$:/Users/yo
   OBJECT_DIR = CMakeFiles\task.dir
   OBJECT_FILE_DIR = CMakeFiles\task.dir
 
+build CMakeFiles/task.dir/creat_account.cpp.obj: CXX_COMPILER__task_Debug C$:/Users/youss/CLionProjects/task/creat_account.cpp || cmake_object_order_depends_target_task
+  DEP_FILE = CMakeFiles\task.dir\creat_account.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\task.dir
+  OBJECT_FILE_DIR = CMakeFiles\task.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target task
@@ -87,7 +93,7 @@ build CMakeFiles/task.dir/website.cpp.obj: CXX_COMPILER__task_Debug C$:/Users/yo
 #############################################
 # Link the executable task.exe
 
-build task.exe: CXX_EXECUTABLE_LINKER__task_Debug CMakeFiles/task.dir/main.cpp.obj CMakeFiles/task.dir/client.cpp.obj CMakeFiles/task.dir/nameOfBuilding.cpp.obj CMakeFiles/task.dir/addClient.cpp.obj CMakeFiles/task.dir/website.cpp.obj
+build task.exe: CXX_EXECUTABLE_LINKER__task_Debug CMakeFiles/task.dir/main.cpp.obj CMakeFiles/task.dir/client.cpp.obj CMakeFiles/task.dir/nameOfBuilding.cpp.obj CMakeFiles/task.dir/addClient.cpp.obj CMakeFiles/task.dir/website.cpp.obj CMakeFiles/task.dir/creat_account.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\task.dir

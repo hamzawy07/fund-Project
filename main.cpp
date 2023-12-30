@@ -3,6 +3,7 @@
 #include "nameOfBuilding.h"
 #include "client.h"
 #include "website.h"
+#include "creat_account.h"
 using namespace std;
 int main() {
     int c;
@@ -98,6 +99,52 @@ int main() {
         } while (choice != 3);
     }
     else if(c==3){
+        create_account crt;
+        int cc;
+        do {
+            cout << "Choose an option:\n"
+                 << "1. Create Account (Interactive)\n"
+                 << "2. Create Account (With Values)\n"
+                 << "3. Log In (Interactive)\n"
+                 << "4. Log In (With Credentials)\n"
+                 << "5. Display Accounts\n"
+                 << "6. Exit\n";
+            cin >> cc;
+            switch (cc) {
+                case 1:
+                    crt.createAccount();
+                    break;
+                case 2: {
+                    string username, password;
+                    cout << "Enter a username: ";
+                    cin >> username;
+                    cout << "Enter a password: ";
+                    cin >> password;
+                    crt.createAccount(username, password);
+                    break;
+                }
+                case 3:
+                    crt.login();
+                    break;
+                case 4: {
+                    string username, password;
+                    cout << "Enter your username: ";
+                    cin >> username;
+                    cout << "Enter your password: ";
+                    cin >> password;
+                    crt.login(username, password);
+                    break;
+                }
+                case 5:
+                    crt.displayAccounts();
+                    break;
+                case 6:
+                    cout << "Exiting program." << endl;
+                    break;
+                default:
+                    cout << "Invalid choice. Try again." << endl;
+            }
+        } while (cc != 6);
         int Nf,No,Nr,Nh;
         Nf = 7;
         Nr = 5;
